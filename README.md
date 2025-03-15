@@ -8,7 +8,7 @@ Webcam (Live Feed)
 YouTube Video Streams
 CCTV/RTSP Streams
 It features encrypted code protection to prevent unauthorized use and copying.⚡
-_________________________________________________________________
+_________________________________________________________________________________________________
 ✨ Features
 ✅ Real-time PPE Detection (Helmet, Goggles, Gloves, Boots, Vest)
 ✅ Multi-Source Video Support (Webcam, YouTube, CCTV)
@@ -28,24 +28,29 @@ cd WORKPLACE-SAFETY-COMPLIANCE
 
 3️⃣ Run the Script
 1. For IMAGE PPE DETECTION :: ( detects PPE in an image without any alert message)
-1_imgdet.py                      
+< 1_imgdet.py >
+                   
 2.🎥 For BASIC YouTube Stream PPE DETECTION ::( detects PPE from a youtube video without any alert message)
 Edit VIDEO_SOURCE in the script:
 VIDEO_SOURCE = "https://youtu.be/YOUR_VIDEO_LINK" 
 or simply run
 Run:
-2_basicyt.py                      
+< 2_basicyt.py >
+
 3.FOR WEBCAMERA ONLY PPE DETECTION :: (no alert only detection)
-3_basicweb.py                 
+< 3_basicweb.py >
+
 4.FOR GOGGLES DETECTION AND ALERT::( only gives alert for goggles. This is for testing if you only have goggles or specs not for  other PPE’s )
-4_goggalert.py                 
+< 4_goggalert.py >
+
 5.FOR WEBCAM DETECTION ALONG WITH ALERT::( PEE detection along with alert on web camera )
-5_webcam.py                   
+< 5_webcam.py >   
+
 6.📡 FOR CCTV RTSP STREAM ALONG WITH ALERT :: ( For CCTV and Yt Videos along with alert  )
 Edit VIDEO_SOURCE:
 VIDEO_SOURCE = "rtsp://username:password@IP:PORT/stream"
 Run:
-6_ytandcamera.py           
+< 6_ytandcamera.py >           
 _________________________________________________________________
 🛠 How It Works
 1️⃣ The YOLOv8 model detects PPE in real-time.
@@ -53,7 +58,7 @@ _________________________________________________________________
 3️⃣ Encrypted code protection prevents unauthorized copying.
 __________________________________________________________________________________________________
 Dataset Information
-Special thanks to Roboflow for their toolkit.
+Special thanks to "Roboflow" for their toolkit.
 __________________________________________________________________________________________________
 📈 Model Training Details
 The YOLOv8 model is trained for 100 epochs, which may lead to variations in detection accuracy. 
